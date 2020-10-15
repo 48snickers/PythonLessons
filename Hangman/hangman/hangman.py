@@ -67,7 +67,7 @@ def presentable_word(word: str, past_guesses: Set[str]) -> str:
   for letter in word.upper():
     if letter in (past_guess.upper() for past_guess in past_guesses):  # case insensitive
       progress += (letter)
-    else:s
+    else:
       progress += (HIDDEN_LETTER)
     progress += DELIMITER
   return progress
